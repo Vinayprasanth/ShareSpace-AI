@@ -1,0 +1,18 @@
+{
+  "name": "resource-sharing-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-assisted resource sharing platform for hackathon demonstration",
+  "scripts": {
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start": "npm --prefix backend start",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
